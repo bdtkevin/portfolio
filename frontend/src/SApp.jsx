@@ -117,15 +117,14 @@ const SApp = styled.div`
     width: 100%;
     height: 100%;
     background-color: ${(props) => props.color || defaultColor};
-    overflow-y: scroll;
-    overflow-x: hidden;
+    overflow: hidden;
     transition: 1s background-color ease-in;
 
     .menu-toggle  {
       display: flex;
       width: 200%;
       height: 100%;
-      /* transition: 1s transform cubic-bezier(1, -0.5, 0.1, 1.5); */
+      transition: 1s transform cubic-bezier(1, -0.5, 0.1, 1.5);
 
       &.hide {
         transform: translateX(-50%);
@@ -204,6 +203,8 @@ const SApp = styled.div`
       .content-page {
         width: 50%;
         height: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
       }
     }
   }

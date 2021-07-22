@@ -6,9 +6,12 @@ export default function About() {
     <SAbout>
       <SPageTitle>#about</SPageTitle>
       <div className='content'>
-        <p>
-          Hi, I'm <em className='big'>Kévin</em>
-        </p>
+        <h2 className='about-name'>
+          Hi, I'm Kévin
+          <span role='img' className='contact-wave'>
+            👋
+          </span>
+        </h2>
       </div>
     </SAbout>
   );
